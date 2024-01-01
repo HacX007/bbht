@@ -74,7 +74,7 @@ cd ~/tools/
 
 #install aquatone
 echo "Installing Aquatone"
-go install -v github.com/michenriksen/aquatone@latest
+go install github.com/michenriksen/aquatone@latest
 echo "done"
 
 #install chromium
@@ -161,7 +161,7 @@ cd ~/tools/
 echo "done"
 
 echo "installing httprobe"
-go install -v -u github.com/tomnomnom/httprobe@master
+go install github.com/tomnomnom/httprobe@latest 
 echo "done"
 
 echo "installing unfurl"
@@ -169,7 +169,7 @@ go install github.com/tomnomnom/unfurl@master
 echo "done"
 
 echo "installing waybackurls"
-go install -v github.com/tomnomnom/waybackurls@latest
+go install github.com/tomnomnom/waybackurls@latest
 echo "done"
 
 echo "installing crtndstry"
@@ -183,6 +183,18 @@ cd ~/tools/SecLists/Discovery/DNS/
 ##THIS FILE BREAKS MASSDNS AND NEEDS TO BE CLEANED
 cat dns-Jhaddix.txt | head -n -14 > clean-jhaddix-dns.txt
 cd ~/tools/
+echo "done"
+
+echo "installing httpx"
+go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+echo "done"
+
+echo "installing subfinder"
+go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+echo "done"
+
+echo "installing anew"
+go install -v github.com/tomnomnom/anew@latest
 echo "done"
 
 
